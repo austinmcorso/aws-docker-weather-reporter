@@ -1,0 +1,4 @@
+{
+  "weatherApiUrl": "http://api.openweathermap.org/data/2.5/weather",
+  "unsecuredApiKey": "ff41d2d09886b0c520de66abf22d5953"
+}

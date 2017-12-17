@@ -1,0 +1,50 @@
+{
+  "name": "aws-docker-weather-reporter",
+  "version": "0.0.1",
+  "description": "AWS ECS Docker NodeJS POC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:unit": "mocha ./index.spec.js",
+    "test:lint": "eslint ./*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinmcorso/aws-docker-weather-reporter.git"
+  },
+  "keywords": [
+    "AWS",
+    "ECS",
+    "Docker",
+    "NodeJS",
+    "POC"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "engineStrict": true,
+  "author": "Austin Corso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austinmcorso/aws-docker-weather-reporter/issues"
+  },
+  "homepage": "https://github.com/austinmcorso/aws-docker-weather-reporter#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "nodemon": "^1.13.3",
+    "supertest": "^3.0.0"
+  }
+}
